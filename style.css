@@ -1,0 +1,200 @@
+
+/* GENERAL PAGE STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080b18;
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* MAIN GAME CONTAINER */
+
+.game-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+
+    background: #11172b;
+    padding: 30px;
+    border-radius: 20px;
+
+    border: 1px solid #27365c;
+    box-shadow: 0 0 30px rgba(0, 150, 255, 0.15);
+}
+
+/* GAME TITLE */
+
+h1 {
+    font-size: 38px;
+    letter-spacing: 4px;
+    color: #39c5ff;
+
+    text-shadow: 0 0 15px #008cff;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #9daac7;
+    margin-bottom: 30px;
+}
+
+/* SCORE AND TIMER */
+
+.game-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.info-box {
+    background: #1b2542;
+    padding: 15px 5px;
+    border-radius: 12px;
+    border: 1px solid #34466f;
+}
+
+.info-box span {
+    display: block;
+    font-size: 10px;
+    color: #9daac7;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.info-box h2 {
+    color: #39c5ff;
+    font-size: 22px;
+}
+
+/* PUZZLE BOARD */
+
+.puzzle-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    background: #080d1d;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #27365c;
+}
+
+/* NUMBER TILES */
+
+.tile {
+    background: linear-gradient(145deg, #1769b5, #4435a8);
+
+    color: white;
+    font-size: clamp(20px, 6vw, 32px);
+    font-weight: bold;
+
+    border: 1px solid #55baff;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 10px rgba(40, 150, 255, 0.25);
+
+    transition: 0.2s;
+}
+
+.tile:hover {
+    background: linear-gradient(145deg, #258cff, #6855ec);
+    transform: scale(1.04);
+}
+
+/* EMPTY SPACE */
+
+.empty {
+    background: #080b18;
+    border: 1px dashed #34466f;
+    cursor: default;
+    box-shadow: none;
+}
+
+/* GAME BUTTONS */
+
+.game-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+button {
+    flex: 1;
+    padding: 14px 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#start-btn {
+    background: #168cff;
+    color: white;
+    box-shadow: 0 0 15px rgba(22, 140, 255, 0.3);
+}
+
+#restart-btn {
+    background: #302c62;
+    color: white;
+    border: 1px solid #6659c9;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.2);
+}
+
+/* GAME MESSAGE */
+
+.game-message {
+    margin-top: 22px;
+    color: #aab8d8;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* MOBILE SCREEN SUPPORT */
+
+@media (max-width: 400px) {
+
+    .game-container {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .info-box h2 {
+        font-size: 18px;
+    }
+
+    .game-buttons {
+        flex-direction: column;
+    }
+}
