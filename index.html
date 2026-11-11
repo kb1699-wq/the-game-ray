@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number Shift</title>
+
+    <!-- Connect the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <h1>NUMBER SHIFT</h1>
+        <p class="subtitle">Arrange the numbers. Beat the clock!</p>
+
+        <!-- Game information -->
+        <div class="game-info">
+
+            <div class="info-box">
+                <span>TIME LEFT</span>
+                <h2 id="timer">05:00</h2>
+            </div>
+
+            <div class="info-box">
+                <span>SCORE</span>
+                <h2 id="score">0</h2>
+            </div>
+
+            <div class="info-box">
+                <span>BEST SCORE</span>
+                <h2 id="best-score">0</h2>
+            </div>
+
+        </div>
+
+        <!-- Puzzle board -->
+        <div id="puzzle-board" class="puzzle-board">
+
+            <!-- JavaScript will create the numbered tiles here -->
+
+        </div>
+
+        <!-- Game buttons -->
+        <div class="game-buttons">
+            <button id="start-btn">START GAME</button>
+            <button id="restart-btn">RESTART</button>
+        </div>
+
+        <!-- Game messages -->
+        <div id="game-message" class="game-message">
+            Press START GAME to begin!
+        </div>
+
+    </main>
+
+    <!-- Connect the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
