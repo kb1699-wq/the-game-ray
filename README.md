@@ -1,1 +1,1 @@
-# the-game-ray
+# number-puzzle-game
